@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Bug Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-logo d-flex align-items-center">
+            <i class="bi bi-bug-fill text-primary fs-3 me-2"></i>
+            <span class="fw-bold fs-5">Bug Tracker</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="sidebar-link"><i class="bi bi-speedometer2"></i><span>Dashboard</span></a>
+            <a href="projects.html" class="sidebar-link"><i class="bi bi-folder"></i><span>Projects</span></a>
+            <a href="issues.html" class="sidebar-link"><i class="bi bi-bug"></i><span>Issues</span></a>
+            <a href="my-tasks.html" class="sidebar-link"><i class="bi bi-check-square"></i><span>My Tasks</span></a>
+            <a href="reports.html" class="sidebar-link"><i class="bi bi-bar-chart"></i><span>Reports</span></a>
+            <a href="users.html" class="sidebar-link"><i class="bi bi-people"></i><span>Users</span></a>
+            <a href="settings.html" class="sidebar-link active"><i class="bi bi-gear"></i><span>Settings</span></a>
+        </nav>
+    </div>
+    <nav class="top-navbar d-flex align-items-center px-4" id="topNavbar">
+        <button class="btn btn-light me-3" id="sidebarToggle"><i class="bi bi-list fs-5"></i></button>
+        <div class="ms-auto d-flex align-items-center gap-3">
+            <button class="btn btn-light position-relative"><i class="bi bi-bell fs-5"></i><span class="notification-badge"></span></button>
+            <div class="d-flex align-items-center gap-2 border-start ps-3">
+                <div class="avatar">JD</div>
+                <a href="login.html" class="btn btn-light"><i class="bi bi-box-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content" id="mainContent">
+        <div class="container-fluid" style="max-width: 900px;">
+            <div class="mb-4">
+                <h1 class="h3 fw-bold mb-1">Settings</h1>
+                <p class="text-muted mb-0">Manage your account and system preferences</p>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-white d-flex align-items-center gap-2">
+                    <i class="bi bi-person"></i>
+                    <h5 class="mb-0 fw-semibold">Profile Settings</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" value="John Doe">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" value="john.doe@company.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Role</label>
+                            <input type="text" class="form-control" value="Developer" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Department</label>
+                            <input type="text" class="form-control" value="Engineering">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary">Save Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-white d-flex align-items-center gap-2">
+                    <i class="bi bi-shield-lock"></i>
+                    <h5 class="mb-0 fw-semibold">Security Settings</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label">Current Password</label>
+                            <input type="password" class="form-control" placeholder="Enter current password">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">New Password</label>
+                            <input type="password" class="form-control" placeholder="Enter new password">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Confirm New Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm new password">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary">Update Password</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-white d-flex align-items-center gap-2">
+                    <i class="bi bi-bell"></i>
+                    <h5 class="mb-0 fw-semibold">Notification Settings</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
+                        <div>
+                            <div class="fw-medium">Email Notifications</div>
+                            <small class="text-muted">Receive email alerts for new assignments and updates</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
+                        <div>
+                            <div class="fw-medium">Push Notifications</div>
+                            <small class="text-muted">Get browser notifications for important updates</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="fw-medium">Weekly Report</div>
+                            <small class="text-muted">Receive weekly summary of your activity</small>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-white d-flex align-items-center gap-2">
+                    <i class="bi bi-database"></i>
+                    <h5 class="mb-0 fw-semibold">System Settings</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h6 class="fw-medium mb-2">Data Export & Backup</h6>
+                        <p class="text-muted small mb-3">Download all your data or create a backup</p>
+                        <button class="btn btn-outline-secondary">Export Data</button>
+                    </div>
+                    <div class="pt-3 border-top">
+                        <h6 class="fw-medium mb-2 text-danger">Danger Zone</h6>
+                        <p class="text-muted small mb-3">Permanently delete your account and all data</p>
+                        <button class="btn btn-danger">Delete Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

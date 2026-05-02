@@ -1,0 +1,102 @@
+================================
+BUG TRACKER - QUICK START GUIDE
+================================
+
+LOCATION OF FILES:
+-----------------
+All HTML files are located in: /workspaces/default/code/public/
+
+FILES CREATED:
+-------------
+✅ login.html          - Login page (START HERE)
+✅ dashboard.html      - Main dashboard with charts
+✅ projects.html       - Project management
+✅ issues.html         - Issues/bugs list
+✅ issue-detail.html   - Detailed issue view
+✅ create-issue.html   - Bug report form
+✅ my-tasks.html       - Personal tasks
+✅ reports.html        - Analytics & reports
+✅ users.html          - User management
+✅ settings.html       - Settings page
+✅ css/style.css       - Custom styles
+✅ js/main.js          - Main JavaScript
+
+HOW TO RUN:
+----------
+
+METHOD 1 - Direct File Access:
+1. Navigate to: /workspaces/default/code/public/
+2. Double-click on login.html
+3. It will open in your default browser
+4. Click "Sign In" to access the dashboard
+
+METHOD 2 - Using a Local Server (Recommended):
+
+Option A - Python (if installed):
+  cd /workspaces/default/code/public
+  python3 -m http.server 8000
+  Open: http://localhost:8000/login.html
+
+Option B - PHP (if installed):
+  cd /workspaces/default/code/public
+  php -S localhost:8000
+  Open: http://localhost:8000/login.html
+
+Option C - Node.js:
+  cd /workspaces/default/code/public
+  npx http-server
+  Open: http://localhost:8080/login.html
+
+NAVIGATION:
+----------
+1. Start at login.html
+2. Click "Sign In" (any credentials work - it's a demo)
+3. Use the sidebar to navigate between pages:
+   - Dashboard
+   - Projects
+   - Issues
+   - My Tasks
+   - Reports
+   - Users
+   - Settings
+
+FEATURES TO TRY:
+--------------
+✅ View dashboard statistics and charts
+✅ Click "Create Project" button on Projects page
+✅ Click "Report Bug" on Issues page
+✅ Click any issue ID to view details
+✅ Try the filters on Issues page
+✅ Toggle the sidebar with the menu button
+✅ Check different tabs on Issue Detail page
+✅ View reports and export options
+✅ Manage users (Users page)
+✅ Update settings (Settings page)
+
+TECHNOLOGIES USED:
+-----------------
+- HTML5
+- CSS3
+- Bootstrap 5.3 (CDN)
+- Bootstrap Icons (CDN)
+- JavaScript (Vanilla)
+- Chart.js (CDN)
+
+NOTES:
+-----
+- This is a FRONTEND ONLY application
+- No backend or database required
+- All data is static/demo data
+- Perfect for UI/UX demonstration
+- Fully responsive design
+- Mobile-friendly
+
+CUSTOMIZATION:
+-------------
+- Edit css/style.css for custom styling
+- Edit js/main.js for custom functionality
+- Modify HTML files for content changes
+
+For detailed documentation, see README.md in the public folder.
+
+ENJOY YOUR BUG TRACKER! 🐛✨

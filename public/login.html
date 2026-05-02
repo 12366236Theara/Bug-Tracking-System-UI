@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracker - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <div class="min-vh-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e0f2fe 0%, #c7d2fe 100%);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card shadow-lg border-0 rounded-4">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <div class="d-inline-flex align-items-center gap-3">
+                                    <div class="bg-primary rounded-3 p-3">
+                                        <i class="bi bi-bug-fill text-white fs-2"></i>
+                                    </div>
+                                    <div class="text-start">
+                                        <h1 class="h3 mb-0 fw-bold">Bug Tracker</h1>
+                                        <p class="text-muted mb-0 small">Issue Management System</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mb-4">
+                                <h2 class="h4 fw-semibold mb-2">Welcome Back</h2>
+                                <p class="text-muted">Sign in to your account</p>
+                            </div>
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-medium">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white">
+                                            <i class="bi bi-envelope text-muted"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label fw-medium">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white">
+                                            <i class="bi bi-lock-fill text-muted"></i>
+                                        </span>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                                        <label class="form-check-label small" for="rememberMe">Remember me</label>
+                                    </div>
+                                    <a href="#" class="small text-primary text-decoration-none fw-medium">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-2 fw-medium shadow">Sign In</button>
+                            </form>
+                            <div class="text-center mt-4">
+                                <p class="small text-muted mb-0">
+                                    Don't have an account?
+                                    <a href="#" class="text-primary text-decoration-none fw-medium">Contact Admin</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>
